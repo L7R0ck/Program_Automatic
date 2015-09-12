@@ -4,17 +4,37 @@
 
 using namespace std;
 /** Declaração das variaveis**/
+float comissao;
 /** Fim da declaração de variavéis.**/
+
 
 /** criação dos componentes do registro! **/
 struct cadastro {
-    char nome[50],email[30],empresa[30],profissao[20];
-    int idade,telefone,cpf;
-    float salario,comissao,salario_atual;
+    char nome[50],sexo[15],email[30],cargo[20],cpf[20];
+    int idade,telefone;
+    float salario,salario_atual;
 };
-cadastro funcionario;
+struct cadastro funcionario;
 /** Fim do Registro**/
+void exibir(char nome[50],char sexo,char email, char cargo[20]){
+};
 int main()
 {
     cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
+    cout<<"Por favor informe o nome do Funcionário: ";
+    cin>> funcionario.nome;
+    cout<<"Informe o sexo do Funcionário: ";
+    cin>>funcionario.sexo;
+    cout<<"Informe o email do funcionário: ";
+    cin>>funcionario.email;
+    cout<<"Informe o cargo do funcionário: ";
+    cin>>funcionario.cargo;
+    cout<<"Informe a idade do funcionário: ";
+    cin>>funcionario.idade;
+    cout<<"Informe o telefone de contato (APENAS NÚMEROS) ";
+    cin>>funcionario.telefone;
+    cout<<"Informe o CPF do funcionário (APENAS NÚMEROS): ";
+    cin>>funcionario.cpf;
+    cout<<"Informe agora o salario do Funcionário (APENAS NÚMEROS): R$ ";
+    cin>>funcionario.salario;
 }
