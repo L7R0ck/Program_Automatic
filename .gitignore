@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <conio.h>
 #include <string>
 
 using namespace std;
@@ -16,25 +17,42 @@ struct cadastro {
 };
 struct cadastro funcionario;
 /** Fim do Registro**/
-void exibir(char nome[50],char sexo,char email, char cargo[20]){
-};
+//Início da Função
+void exibir(char name[50], int age, char sex[10], char carg[50], char mail[20], int phone, char cadpf[11], double sal) {
+    system("cls");
+    cout << "--------- CADASTRO COMPLETO --------- \n \n";
+    cout << "Nome: " << name << endl;
+    cout << "Idade: " << age << " anos." << endl;
+    cout << "Sexo: " << sex << endl;
+    cout << "Cargo: " << carg << endl;
+    cout << "Email: " << mail << endl;
+    cout << "Telefone para Contato: (73) " << phone << endl;
+    cout << "Cadastro de Pessoa Fisica (CPF): " << cadpf << endl;
+    cout << "Salario Atual: R$ " << sal << endl;
+
+}
+
+//FimFunção
+
 int main()
 {
     cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
-    cout<<"Por favor informe o nome do Funcionário: ";
+    cout<<"Por favor informe o Nome do Funcionario: ";
     cin>> funcionario.nome;
-    cout<<"Informe o sexo do Funcionário: ";
+    cout<<"Informe o sexo do Funcionario: ";
     cin>>funcionario.sexo;
-    cout<<"Informe o email do funcionário: ";
+    cout<<"Informe o email do Funcionario: ";
     cin>>funcionario.email;
-    cout<<"Informe o cargo do funcionário: ";
+    cout<<"Informe o cargo do Funcionario: ";
     cin>>funcionario.cargo;
-    cout<<"Informe a idade do funcionário: ";
+    cout<<"Informe a idade do Funcionario: ";
     cin>>funcionario.idade;
-    cout<<"Informe o telefone de contato (APENAS NÚMEROS) ";
+    cout<<"Informe o Telefone de Contato (APENAS NUMEROS): ";
     cin>>funcionario.telefone;
-    cout<<"Informe o CPF do funcionário (APENAS NÚMEROS): ";
+    cout<<"Informe o CPF do Funcionario (APENAS NUMEROS): ";
     cin>>funcionario.cpf;
-    cout<<"Informe agora o salario do Funcionário (APENAS NÚMEROS): R$ ";
+    cout<<"Informe agora o Salario do Funcionario (APENAS NUMEROS): R$ ";
     cin>>funcionario.salario;
+    //char name[50], int age, char sex[50], char carg[50], char mail[50], int phone, int cpff, double sal
+    exibir(funcionario.nome, funcionario.idade, funcionario.sexo, funcionario.cargo, funcionario.email, funcionario.telefone, funcionario.cpf, funcionario.salario);
 }
