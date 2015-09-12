@@ -32,8 +32,12 @@ void exibir(char name[50], int age, char sex[10], char carg[50], char mail[20], 
 }
 
 void extra (double comiss, double salars, char name[50]) {
+    double new_salrs;
     comiss = salars * 0.15;
     cout << "Por cada venda, " << name << " ganha R$ " << comiss << " de comissao." << endl;
+    new_salrs = comiss + salars;
+    cout << "O Novo Salário do Funcionário: R$ " << new_salrs << endl;
+
 }
 //FimFunção
 
