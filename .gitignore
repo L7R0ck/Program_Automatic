@@ -16,8 +16,18 @@ struct cadastro {
 };
 struct cadastro funcionario;
 /** Fim do Registro**/
-void exibir(char nome[50],char sexo,char email, char cargo[20]){
-};
+//Início da Função
+void exibir(char name, int age, char mail, double sal, double qttd) {
+    cout << "Nome: " << name;
+    cout << "Idade: " << age << " anos.";
+    cout << "Email: " << mail;
+    cout << "Salário Atual: R$ " << sal;
+    cout << "Comissão por Quantidade de Vendas: R$ " << qttd;
+    return 0;
+}
+
+//FimFunção
+
 int main()
 {
     cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
