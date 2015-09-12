@@ -7,14 +7,33 @@ using namespace std;
 /** Fim da declaração de variavéis.**/
 
 /** criação dos componentes do registro! **/
+
 struct cadastro {
     char nome[50],email[30],empresa[30],profissao[20];
     int idade,telefone,cpf;
     float salario,comissao,salario_atual;
 };
+
 cadastro funcionario;
 /** Fim do Registro**/
+char name [50];
+char mail [50];
+int age;
+double sal, qtdd;
 int main()
 {
-    cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
+    cout << "------------- Sistema Automatizado Empresarial. Versao 1.0 -------------" << endl;
+    cout << "\n\n";
+    cout << "Preencha com seus dados: " << endl;
+    cout << "Nome: ";
+    cin >> name;
+    cout << "Idade: ";
+    cin >> age;
+    cout << "Email: ";
+    cin >> mail;
+    cout << "Salario: R$ ";
+    cin >> sal;
+    cout << "Quantidade de Vendas(em Reais): R$ ";
+    cin >> qtdd;
+
 }
