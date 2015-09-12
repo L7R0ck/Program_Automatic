@@ -18,15 +18,18 @@ struct cadastro {
 struct cadastro funcionario;
 /** Fim do Registro**/
 //Início da Função
-void exibir(char name, int age, char mail, double sal) {
+void exibir(char name[50], int age, char sex[10], char carg[50], char mail[20], int phone, char cadpf[11], double sal) {
     system("cls");
+    cout << "--------- CADASTRO COMPLETO --------- \n \n";
+    cout << "Nome: " << name << endl;
+    cout << "Idade: " << age << " anos." << endl;
+    cout << "Sexo: " << sex << endl;
+    cout << "Cargo: " << carg << endl;
+    cout << "Email: " << mail << endl;
+    cout << "Telefone para Contato: (73) " << phone << endl;
+    cout << "Cadastro de Pessoa Fisica (CPF): " << cadpf << endl;
+    cout << "Salario Atual: R$ " << sal << endl;
 
-    cout << "Nome: " << name;
-    cout << "Idade: " << age << " anos.";
-    cout << "Email: " << mail;
-    cout << "Salário Atual: R$ " << sal;
-
-    return 0;
 }
 
 //FimFunção
@@ -44,12 +47,12 @@ int main()
     cin>>funcionario.cargo;
     cout<<"Informe a idade do Funcionario: ";
     cin>>funcionario.idade;
-    cout<<"Informe o Telefone de Contato (APENAS NUMEROS) ";
+    cout<<"Informe o Telefone de Contato (APENAS NUMEROS): ";
     cin>>funcionario.telefone;
     cout<<"Informe o CPF do Funcionario (APENAS NUMEROS): ";
     cin>>funcionario.cpf;
     cout<<"Informe agora o Salario do Funcionario (APENAS NUMEROS): R$ ";
     cin>>funcionario.salario;
-
-    exibir(funcionario.nome, funcionario.idade, funcionario.email, funcionario.salario);
+    //char name[50], int age, char sex[50], char carg[50], char mail[50], int phone, int cpff, double sal
+    exibir(funcionario.nome, funcionario.idade, funcionario.sexo, funcionario.cargo, funcionario.email, funcionario.telefone, funcionario.cpf, funcionario.salario);
 }
