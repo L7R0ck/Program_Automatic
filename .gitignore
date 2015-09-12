@@ -4,15 +4,18 @@
 #include <string>
 
 using namespace std;
+/** Declaração das variaveis**/
+/** Fim da declaração de variavéis.**/
+
+
 /** criação dos componentes do registro! **/
 struct cadastro {
     char nome[50],sexo[15],email[30],cargo[20],cpf[20];
     int idade,telefone;
-    float salario,salario_atual,comissao;
+    float salario,salario_atual, comissao;
 };
 struct cadastro funcionario;
 /** Fim do Registro**/
-
 //Início da Função
 void exibir(char name[50], int age, char sex[10], char carg[50], char mail[20], int phone, char cadpf[11], double sal) {
     system("cls");
@@ -25,12 +28,18 @@ void exibir(char name[50], int age, char sex[10], char carg[50], char mail[20], 
     cout << "Telefone para Contato: (73) " << phone << endl;
     cout << "Cadastro de Pessoa Fisica (CPF): " << cadpf << endl;
     cout << "Salario Atual: R$ " << sal << endl;
+
+}
+
+void extra (double comiss, double salars, char name[50]) {
+    comiss = salars * 0.15;
+    cout << "Por cada venda, " << name << " ganha R$ " << comiss << " de comissao." << endl;
 }
 //FimFunção
 
 int main()
 {
-    cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
+    cout<<"----------------- Sistema Automatizado Empresarial. Versao 1.0 -----------------  \n"<<endl;
     cout<<"Por favor informe o Nome do Funcionario: ";
     cin>> funcionario.nome;
     cout<<"Informe o sexo do Funcionario: ";
@@ -49,4 +58,5 @@ int main()
     cin>>funcionario.salario;
     //char name[50], int age, char sex[50], char carg[50], char mail[50], int phone, int cpff, double sal
     exibir(funcionario.nome, funcionario.idade, funcionario.sexo, funcionario.cargo, funcionario.email, funcionario.telefone, funcionario.cpf, funcionario.salario);
+    extra(funcionario.comissao, funcionario.salario, funcionario.nome);
 }
