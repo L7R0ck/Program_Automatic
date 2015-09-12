@@ -1,0 +1,20 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+/** Declaração das variaveis**/
+/** Fim da declaração de variavéis.**/
+
+/** criação dos componentes do registro! **/
+struct cadastro {
+    char nome[50],email[30],empresa[30],profissao[20];
+    int idade,telefone,cpf;
+    float salario,comissao,salario_atual;
+};
+cadastro funcionario;
+/** Fim do Registro**/
+int main()
+{
+    cout<<"--- Sistema Automatizado Empresarial. Versão 1.0 ---"<<endl;
+}
